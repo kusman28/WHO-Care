@@ -1,6 +1,6 @@
-# who_care
+# WHO Care
 
-A new Flutter project.
+A AppCon2020 mobile application entry.
 
 ## Getting Started
 
