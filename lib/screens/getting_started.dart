@@ -2,7 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import '../model/slide.dart';
 import '../widgets/slide_dots.dart';
-
+import 'login_screen.dart';
+import 'signup_screen.dart';
 import '../widgets/slide_item.dart';
 
 class GettingStarted extends StatefulWidget {
@@ -91,19 +92,29 @@ class _GettingStartedState extends State<GettingStarted> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                 FlatButton(
-                  child: Text('Getting Started', style: TextStyle(fontSize: 18,),),
+                  child: Text('Get Started', style: TextStyle(fontSize: 18,),),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),
                   ),
                   padding: const EdgeInsets.all(15),
                   color: Theme.of(context).primaryColor,
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(SignupScreen.routeName);
+                  },
                 ),
                 Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                   Text('Have an account?', style: TextStyle(fontSize: 18,),),
-                  FlatButton(child: Text('Login', style: TextStyle(fontSize: 18,),),),
+                  FlatButton(
+                    child: 
+                    Text('Login', style: 
+                    TextStyle(fontSize: 18)
+                    ,),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(LoginScreen.routeName);
+                    }
+                  ,),
                 ],),
               ],)
             ],
