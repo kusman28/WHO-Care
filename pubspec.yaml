@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_dialogflow: ^0.1.2
   firebase_auth: ^0.15.1
   http: ^0.12.0+2
   youtube_player_flutter: ^6.0.3+2
@@ -51,6 +52,10 @@ flutter:
    - assets/images/logo.png
    - assets/images/logo1.png
    - assets/images/logo2.png
+   - assets/chatbot.json
+   - assets/whocare.json
+   - assets/lasa.json
+   - assets/BirthDayWisher-27d44bfaad84.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

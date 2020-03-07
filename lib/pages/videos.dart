@@ -140,9 +140,9 @@ class _VideosState extends State<Videos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Motivational Videos'),
-      // ),
+      appBar: AppBar(
+        title: Text('Motivational Videos'),
+      ),
       body: _channel != null
           ? NotificationListener<ScrollNotification>(
               onNotification: (ScrollNotification scrollDetails) {
