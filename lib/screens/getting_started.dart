@@ -105,11 +105,11 @@ class _GettingStartedState extends State<GettingStarted> {
                 Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                  Text('Have an account?', style: TextStyle(fontSize: 18,),),
+                  Text('Have an Account?', style: TextStyle(fontSize: 18,),),
                   FlatButton(
                     child: 
                     Text('Login', style: 
-                    TextStyle(fontSize: 18)
+                    TextStyle(fontSize: 18, color: Colors.blue)
                     ,),
                     onPressed: () {
                       Navigator.of(context).pushNamed(LoginScreen.routeName);
