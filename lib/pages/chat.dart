@@ -60,7 +60,7 @@ class _ChatState extends State<Chat> {
     _textController.clear();
     ChatMessage message = new ChatMessage(
       text: text,
-      name: "Promise",
+      name: "Me",
       type: true,
     );
     setState(() {
@@ -106,7 +106,7 @@ class ChatMessage extends StatelessWidget {
       new Container(
         margin: const EdgeInsets.only(right: 16.0),
         // child: new CircleAvatar(child: new Text('B')),
-        child: new CircleAvatar(child: new Image.asset("images/AppCon.png")),
+        child: new CircleAvatar(child: new Image.asset("assets/images/AppCon.png")),
       ),
       new Expanded(
         child: new Column(
