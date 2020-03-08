@@ -52,10 +52,9 @@ flutter:
    - assets/images/logo.png
    - assets/images/logo1.png
    - assets/images/logo2.png
-   - assets/chatbot.json
-   - assets/whocare.json
-   - assets/lasa.json
-   - assets/BirthDayWisher-27d44bfaad84.json
+   - assets/images/AppCon.png
+   - assets/whocare-2e5fbac308e8.json
+   - assets/youtube-api-270302-8e693a015f80.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

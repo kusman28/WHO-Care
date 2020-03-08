@@ -40,7 +40,7 @@ class _ChatState extends State<Chat> {
   void Response(query) async {
     _textController.clear();
     AuthGoogle authGoogle =
-        await AuthGoogle(fileJson: "assets/BirthDayWisher-27d44bfaad84.json")
+        await AuthGoogle(fileJson: "assets/youtube-api-270302-8e693a015f80.json")
             .build();
     Dialogflow dialogflow =
         Dialogflow(authGoogle: authGoogle, language: Language.english);
@@ -48,7 +48,7 @@ class _ChatState extends State<Chat> {
     ChatMessage message = new ChatMessage(
       text: response.getMessage() ??
           new CardDialogflow(response.getListMessage()[0]).title,
-      name: "Bot",
+      name: "WHOCare",
       type: false,
     );
     setState(() {
@@ -74,7 +74,8 @@ class _ChatState extends State<Chat> {
     return new Scaffold(
       appBar: new AppBar(
         centerTitle: true,
-        title: new Text("Flutter and Dialogflow"),
+        automaticallyImplyLeading: false,
+        title: new Text("ChatBot"),
       ),
       body: new Column(children: <Widget>[
         new Flexible(
@@ -105,8 +106,8 @@ class ChatMessage extends StatelessWidget {
     return <Widget>[
       new Container(
         margin: const EdgeInsets.only(right: 16.0),
-        // child: new CircleAvatar(child: new Text('B')),
-        child: new CircleAvatar(child: new Image.asset("assets/images/AppCon.png")),
+        child: new CircleAvatar(child: new Text('W')),
+        // child: new CircleAvatar(child: new Image.asset("assets/images/AppCon.png")),
       ),
       new Expanded(
         child: new Column(
@@ -115,8 +116,10 @@ class ChatMessage extends StatelessWidget {
             new Text(this.name,
                 style: new TextStyle(fontWeight: FontWeight.bold)),
             new Container(
+              color: Colors.blue[700],
+              padding: EdgeInsets.all(10),
               margin: const EdgeInsets.only(top: 5.0),
-              child: new Text(text),
+              child: new Text(text, style: TextStyle(color: Colors.white)),
             ),
           ],
         ),
@@ -132,6 +135,8 @@ class ChatMessage extends StatelessWidget {
           children: <Widget>[
             new Text(this.name, style: Theme.of(context).textTheme.subhead),
             new Container(
+              color: Colors.grey[300],
+              padding: EdgeInsets.all(10),
               margin: const EdgeInsets.only(top: 5.0),
               child: new Text(text),
             ),

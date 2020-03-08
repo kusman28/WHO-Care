@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "youtube-api-270302",
+  "private_key_id": "8e693a015f809d5db0a409145fde3b6a0c40dcda",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDf717sSQXnwhDP\nqHx1F8vX899Ve1GoxgGVIAOz5fuFW2UI9SchjxFWazCxYMJAYo7UYkLf2II45ieJ\nzd9kqhhYGPokO49dcQfF9ZeCoTa6S4C68X8ptndhyyuXcJDLaFy1PcozF+Cf7X4N\nbekuHCUie+OA2QVMhdgjnzisHRPYu/RbmSe75Q9yau/ukkzVgH6yR0b572tUsnfE\nU5n0L/Uc+1ytofXXzYNxVXL2LRW69+MLkSJSkVIIY2Xxd2LOEC9lAupxXfawg1Ba\nVFeE9gw8R8teOsNconHoEBbN3c5KkM4s+fnp7a+b4yWDO6emyfK7jh7+k3rSJe/g\nC72aOROVAgMBAAECggEALBm9hWYKIi6vVd32CK9Thydxa6m6FrVL+XzRDdw0cPpj\nRuTUvICq5ux8LeqCxuBCBaSGTAQc/SyiS7q+DFqNKchddsY+ASZx4/PuTx0FpKGa\n6/YEV4gmMZ2r64qREWXvoAfXqsFAjO5d/TIQknKbg5OHZcgXiY7wVm+UXxzo3C0l\nZ3vUQTrWapT7YUTLzF2FPUCU7Qy92jHD265pQrlrWJrHiNiC+vDdqnQbd1pVQXsu\nqWcLwtdircSMOb9THwwjVKxzGu/jyHRbyDpL46qm5ED8oJKrqbbo83weWzVRObqQ\ng5PnbzAuMQhDYryo9Fe0V8hUFvlDuOZbq/weSqefvwKBgQD1s6opQ5BW5YJN9RNG\n3Yy82T282XFW4q0KPtRiOK/CqSOoEVR1/gqy2ICxC71Mgaq5iYakM+FKA1Lc2uzX\nJakbtP6iNpFOrcEzf5DzjWIMNgapLINOrCgmwInTJkNwcXCcCLEnOBv7Fjy8+h+/\nk61SQoShacYcS9X4ya3ZNWqK4wKBgQDpUicSmfMKa7ycGTV0P25a5h85vjyWNP8h\nEZN4aVxQcUgJv+peIdMRRcG/TGA0GSuE6m2k+AlJzKZCh3sB6BFXuakvPWhn799f\n4Aw2VmX7WGIuVP9DfbLhI3oMkQcBB429VK7z+dFcRadF1ZTyFNMLnJPzeWxF75rN\nFHySRYdZJwKBgQC8fMv5Q9+jCgZgj7XuE2A4L9/w1E7ifJqK1ZBQmXQcPW0hLcpB\nilXixbxUFdFus7qpAxvLNBGMmegjjb9LfZSxsLP29S2b0if4vdARR1EEVR3fAkrp\nO6DBucsBtMTfqebdjL16fMzaXkDSKH/alAvOo0DkIyTb6EGJzg4UJ6pISQKBgDGA\nDGoV30pGsS0s6/pNusvuJpHJmnEDrV0GrZLOR5eJcQ8geEigRHdVpVVAjuh+roz0\nb26gcNgHYv6aX6533bYO3aX4ET571ZgxoGWmztwUVEAgKEfZUyoQrMQdwK6nO5r/\nbF62kYRSArr+JSt234+HGJx/FkmAHAeGYSdnON/hAoGAEBupfTTqknamR1wFRytu\nCFWpbth1iJc4Ec42lIvjbRnWtzX28z08vXEpTwzlH5KjRmRLihZgsx9YpWyjHiIR\nKfuNpx5HbSDM1l/hmO6vNVhCCMipEJA3sc8eZNVuVX2mZEOYtANP3DdwXphgJFFM\ntSVO+1beCBfnxDimrvGy/5k=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-suomry@youtube-api-270302.iam.gserviceaccount.com",
+  "client_id": "110146696722195217387",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-suomry%40youtube-api-270302.iam.gserviceaccount.com"
+}
