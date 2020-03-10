@@ -7,6 +7,7 @@ import 'signup_screen.dart';
 import '../widgets/slide_item.dart';
 
 class GettingStarted extends StatefulWidget {
+  
   @override
   _GettingStartedState createState() => _GettingStartedState();
 }

@@ -21,12 +21,22 @@ dependencies:
     sdk: flutter
   flutter_dialogflow: ^0.1.2
   firebase_auth: ^0.15.1
+  firebase_storage:
+  firebase_database:
   http: ^0.12.0+2
   youtube_player_flutter: ^6.0.3+2
+  flutter_launcher_icons: "^0.7.3"
+  intl: ^0.15.7
+  image_picker: 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
 
 dev_dependencies:
   flutter_test:
@@ -46,9 +56,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+   - assets/images/icon.png
+   - assets/images/slider5.png
+   - assets/images/slider4.png
+   - assets/images/slider3.png
    - assets/images/slider2.png
    - assets/images/slider1.png
    - assets/images/slider.png
+   - assets/images/logoo.png
    - assets/images/logo.png
    - assets/images/logo1.png
    - assets/images/logo2.png

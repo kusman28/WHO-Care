@@ -5,6 +5,8 @@ import 'package:who_care/pages/consult.dart';
 import 'package:who_care/pages/dashboard.dart';
 import 'package:who_care/pages/settings.dart';
 import 'package:who_care/pages/videos.dart';
+import 'package:who_care/screens/getting_started.dart';
+import 'upload.dart';
 
 class Home extends StatefulWidget {
   
@@ -19,6 +21,51 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+Future<void> _logOut() async {
+  showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Are you sure?"),
+          content: new Text("You are going to sign out."),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new MaterialButton(
+              // color: Colors.red,
+              // textColor: Colors.white,
+              child: new Text("No"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            new Text('|'),
+            new MaterialButton(
+              // color: Colors.green,
+              // textColor: Colors.white,
+              child: new Text("Yes"),
+              onPressed: () {
+                    try {
+                      FirebaseAuth.instance.signOut();
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => GettingStarted()));
+                    } catch (e) {
+                      print(e); // TODO: show dialog with error
+                    }
+              },
+            ),
+          ],
+        );
+      },
+    );
+    // try {
+    //   await FirebaseAuth.instance.signOut();
+    //   Navigator.push(context, MaterialPageRoute(builder: (context) => GettingStarted()));
+    // } catch (e) {
+    //   print(e); // TODO: show dialog with error
+    // }
+  }
+
   // Properties & Variables needed
 
   int currentTab = 0; // to keep track of active tab index
@@ -43,8 +90,16 @@ class _HomeState extends State<Home> {
         bucket: bucket,
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.call),
-        onPressed: () {},
+        child: Icon(Icons.add_comment),
+        onPressed: () {
+          Navigator.push
+          (
+            context, 
+            MaterialPageRoute(builder: (context){
+              return new UploadPage();
+            })
+          );
+        },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
@@ -71,11 +126,11 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.dashboard,
+                          Icons.rss_feed,
                           color: currentTab == 0 ? Colors.blue : Colors.grey,
                         ),
                         Text(
-                          'Dashboard',
+                          'Stories',
                           style: TextStyle(
                             color: currentTab == 0 ? Colors.blue : Colors.grey,
                           ),
@@ -143,22 +198,17 @@ class _HomeState extends State<Home> {
                   ),
                   MaterialButton(
                     minWidth: 40,
-                    onPressed: () {
-                      setState(() {
-                        currentScreen =
-                            Settings(); // if user taps on this dashboard tab will be active
-                        currentTab = 3;
-                      });
-                    },
+                    onPressed: 
+                      _logOut,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.settings,
+                          Icons.exit_to_app,
                           color: currentTab == 3 ? Colors.blue : Colors.grey,
                         ),
                         Text(
-                          'Settings',
+                          'Sign Out',
                           style: TextStyle(
                             color: currentTab == 3 ? Colors.blue : Colors.grey,
                           ),

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
-
 import 'package:who_care/pages/home.dart';
+import 'package:who_care/pages/dialog.dart';
 
 class LoginScreen extends StatefulWidget {
+
   static const routeName = '/login';
 
   @override
@@ -12,6 +13,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  DialogBox dialogBox = new DialogBox();
   String _email, _password;
   final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
   @override
@@ -72,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     validator: (input) {
                       if(input.length < 6) {
-                        return 'You must have atleast 6 characters.';
+                        return 'Please enter your password.';
                       }
                     },
                     onSaved: (input) => _password = input,
@@ -96,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBox(height: 20,),
                   FlatButton( 
                   child: Text(
-                    'Login',
+                    'Sign In',
                     style: TextStyle(
                       fontSize: 20,
                     ),
@@ -131,6 +133,8 @@ class _LoginScreenState extends State<LoginScreen> {
       AuthResult user = (await FirebaseAuth.instance.signInWithEmailAndPassword(email: _email, password: _password));
       Navigator.push(context, MaterialPageRoute(builder: (context) => Home(user: user.user)));
       }catch(e){
+        // dialogBox.information(context, "Error", e.toString());
+        dialogBox.information(context, "Login Failed", "Please enter correct username and password.");
         print(e.message);
       }
     } 
