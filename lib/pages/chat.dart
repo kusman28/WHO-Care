@@ -22,7 +22,7 @@ class _ChatState extends State<Chat> {
                 controller: _textController,
                 onSubmitted: _handleSubmitted,
                 decoration:
-                    new InputDecoration.collapsed(hintText: "Send a message"),
+                    new InputDecoration.collapsed(hintText: "Send a “Hi” message"),
               ),
             ),
             new Container(
