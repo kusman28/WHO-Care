@@ -1,6 +1,6 @@
 # WHO Care
 
-A AppCon2020 mobile application entry.
+An AppCon2020 mobile application entry.
 
 ## Getting Started
 
